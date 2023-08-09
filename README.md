@@ -14,10 +14,10 @@ Requirements can be found in the requirements.txt file.
 
 We test on the ImageNet-1K, NABirds, COCO 2014, and NUS-Wide datasets. They are available through the following links:
 
-Imagenet is available through Kaggle: [https://www.kaggle.com/c/imagenet-object-localization-challenge](https://www.kaggle.com/c/imagenet-object-localization-challenge)
-NABirds is available through the official website: [https://dl.allaboutbirds.org/nabirds](https://dl.allaboutbirds.org/nabirds)
-COCO is available through the official website: [https://cocodataset.org/](https://cocodataset.org/)
-For NUS-Wide, we use the variation made available by Alibaba-MIIL: [https://github.com/Alibaba-MIIL/ASL/blob/main/MODEL_ZOO.md](https://github.com/Alibaba-MIIL/ASL/blob/main/MODEL_ZOO.md)
+- Imagenet is available through Kaggle: [https://www.kaggle.com/c/imagenet-object-localization-challenge](https://www.kaggle.com/c/imagenet-object-localization-challenge)
+- NABirds is available through the official website: [https://dl.allaboutbirds.org/nabirds](https://dl.allaboutbirds.org/nabirds)
+- COCO is available through the official website: [https://cocodataset.org/](https://cocodataset.org/)
+- For NUS-Wide, we use the variation made available by Alibaba-MIIL: [https://github.com/Alibaba-MIIL/ASL/blob/main/MODEL_ZOO.md](https://github.com/Alibaba-MIIL/ASL/blob/main/MODEL_ZOO.md)
 
 
 ## Training
@@ -35,13 +35,13 @@ train.py --dataset imagenet --data <path_to_data> --batch-size 256 --lr 0.001 --
 In order to evaluate the trained models, we first extract an overview of the Weights and Biases (W&B) project where we have logged the training runs.
 
 ```
-python get_wandb_tables.py --entity <wandb_entity> --project <wandb_project> --output_path <path_to_wandb_overviews>
+get_wandb_tables.py --entity <wandb_entity> --project <wandb_project> --output_path <path_to_wandb_overviews>
 ```
 
 Using the W&B overview, we extract the metric performance as well as reduction patterns of all models in the W&B project if the viz_mode argument is provided.
 
 ```
-python validate_dirs.py --dataset imagenet --data <path_to_data> --output_dir <path_to_eval_output> --dataset_csv <path_to_wandb_overviews> --viz_mode --use_amp
+validate_dirs.py --dataset imagenet --data <path_to_data> --output_dir <path_to_eval_output> --dataset_csv <path_to_wandb_overviews> --viz_mode --use_amp
 ```
 
 ## Analysis
