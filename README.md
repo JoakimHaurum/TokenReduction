@@ -109,7 +109,7 @@ The Code is licensed under an MIT License, with exceptions of the afforementione
 
 ## Bibtex
 ```bibtex
-@article{Haurum_2023_ICCVW,
+@InProceedings{Haurum_2023_ICCVW,
 author = {Joakim Bruslund Haurum and Sergio Escalera and Graham W. Taylor and Thomas B. Moeslund},
 title = {Which Tokens to Use? Investigating Token Reduction in Vision Transformers},
 booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
