@@ -1,6 +1,6 @@
 # Which Tokens to Use? Investigating Token Reduction in Vision Transformers
 
-This repository is the official implementation of [Which Tokens to Use? Investigating Token Reduction in Vision Transformers](). 
+This repository is the official implementation of [Which Tokens to Use? Investigating Token Reduction in Vision Transformers](https://arxiv.org/abs/2308.04657). 
 
 We conduct the first systematic comparison and analysis of 10 state-of-the-art token reduction methods across four image classification datasets, trained using a single codebase and consistent training protocol. Through extensive experiments providing deeper insights into the core mechanisms of the token reduction methods. We make all of the training and analysis code used for the project available.
 
